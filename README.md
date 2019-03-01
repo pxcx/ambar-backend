@@ -52,7 +52,7 @@ Parâmetros:
 - inicio (string: YYYY-MM-DD)
 - fim (string: YYYY-MM-DD)
 
-Exemplo: [http://127.0.0.1:5000/temperatura-maxima/2019-03-01/2019-03-05](http://127.0.0.1:5000/temperatura-maxima/2019-03-01/2019-03-05)
+Exemplo: [http://localhost:5000/temperatura-maxima/2019-03-01/2019-03-05](http://localhost:5000/temperatura-maxima/2019-03-01/2019-03-05)
 
 #### `[GET] /precipitacao/<inicio>/<fim>`
 Retorna uma lista de média de precipitacao por cidade.
@@ -62,7 +62,7 @@ Parâmetros:
 - inicio (string: YYYY-MM-DD)
 - fim (string: YYYY-MM-DD)
 
-Exemplo: [http://127.0.0.1:5000/precipitacao/2019-03-01/2019-03-05](http://127.0.0.1:5000/precipitacao/2019-03-01/2019-03-05)
+Exemplo: [http://localhost:5000/precipitacao/2019-03-01/2019-03-05](http://localhost:5000/precipitacao/2019-03-01/2019-03-05)
 
 #### `[GET] /probabilidade/<inicio>/<fim>`
 Retorna a probabilidade total de chuva.
@@ -72,4 +72,4 @@ Parâmetros:
 - inicio (string: YYYY-MM-DD)
 - fim (string: YYYY-MM-DD)
 
-Exemplo: [http://127.0.0.1:5000/probabilidade/2019-03-01/2019-03-05](http://127.0.0.1:5000/probabilidade/2019-03-01/2019-03-05)
+Exemplo: [http://localhost:5000/probabilidade/2019-03-01/2019-03-05](http://localhost:5000/probabilidade/2019-03-01/2019-03-05)
