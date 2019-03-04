@@ -4,11 +4,9 @@ from datetime import datetime, date
 from models.previsao import Previsao, db
 
 def configure(app):
-    '''
-    /temperatura-maxima - retorna a cidade com a temperatura maxima
-    - inicio (YYYY-MM-DD)
-    - fim (YYYY-MM-DD)
-    '''
+    # rota: /temperatura-maxima - retorna a cidade com a temperatura maxima
+    # - inicio (YYYY-MM-DD)
+    # - fim (YYYY-MM-DD)
     @app.route('/temperatura-maxima/<inicio>/<fim>', methods=['GET'])
     def temperaturaMaxima(inicio, fim):
         try:

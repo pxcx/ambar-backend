@@ -4,11 +4,9 @@ from datetime import datetime, date
 from models.previsao import Previsao, db
 
 def configure(app):
-    '''
-    /probabilidade - retorna a probabilidade total de chuva
-    - inicio (YYYY-MM-DD)
-    - fim (YYYY-MM-DD)
-    '''
+    # /probabilidade - retorna a probabilidade total de chuva
+    # - inicio (YYYY-MM-DD)
+    # - fim (YYYY-MM-DD)
     @app.route('/probabilidade/<inicio>/<fim>', methods=['GET'])
     def probabilidade(inicio, fim):
         try:

@@ -4,11 +4,9 @@ from datetime import datetime, date
 from models.previsao import Previsao, db
 
 def configure(app):
-    '''
-    rota: /precipitacao - retorna uma lista de média de precipitacao por cidade
-    - inicio (YYYY-MM-DD)
-    - fim (YYYY-MM-DD)
-    '''
+    # rota: /precipitacao - retorna uma lista de média de precipitacao por cidade
+    # - inicio (YYYY-MM-DD)
+    # - fim (YYYY-MM-DD)
     @app.route('/precipitacao/<inicio>/<fim>', methods=['GET'])
     def precipitacao(inicio, fim):
         try:

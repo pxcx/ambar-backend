@@ -5,11 +5,9 @@ from datetime import datetime, date
 from models.previsao import Previsao, db
 
 def configure(app):
-    '''
-    /coleta - faz a coleta dos dados da cidade informada como parametro
-    - cidade (string)
-    - uf (string)
-    '''
+    # rota: /coleta - faz a coleta dos dados da cidade informada como parametro
+    # - cidade (string)
+    # - uf (string)
     @app.route('/coleta', methods=['POST'])
     def coleta():
         try:
@@ -59,9 +57,7 @@ def configure(app):
         except Exception as e:
             return jsonify({'error': str(e)})
 
-'''
-funcao auxiliar que retorna a lista de previsoes dee uma cidade formatada
-'''
+# funcao auxiliar que retorna a lista de previsoes dee uma cidade formatada
 def previsoes(cidade, uf, pais):
     try:
         out = []
