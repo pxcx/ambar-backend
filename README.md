@@ -15,7 +15,6 @@ idna==2.8<br>
 itsdangerous==1.1.0<br>
 Jinja2==2.10<br>
 MarkupSafe==1.1.1<br>
-pkg-resources==0.0.0<br>
 requests==2.21.0<br>
 six==1.12.0<br>
 SQLAlchemy==1.2.18<br>
