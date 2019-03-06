@@ -5,7 +5,7 @@ from views import coleta, temperatura_maxima, precipitacao, probabilidade
 # rota: / - exibe a documentacao da api
 @app.route('/', methods=['GET'])
 def index():
-	return jsonify({ 'status' : 'API running...'})
+	return 'API running...'
 
 # rota: /coleta - faz a coleta dos dados da cidade informada como parametro
 # - cidade (string)
@@ -28,4 +28,4 @@ precipitacao.configure(app)
 probabilidade.configure(app)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=4000)
